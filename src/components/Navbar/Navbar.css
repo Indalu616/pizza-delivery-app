@@ -1,0 +1,69 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.nav-container .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.links a {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.links a:hover {
+  color: #3c40c6;
+  cursor: pointer;
+  border-bottom: 2px solid #3c40c6;
+}
+.links .cart {
+  position: relative;
+  width: 30px;
+  /* height: 40px; */
+}
+.cart .cart-length {
+  position: absolute;
+  top: -40%;
+  right: 0;
+  z-index: 200;
+  color: rgb(211, 15, 15);
+  font-weight: 600;
+}
+
+.logo h1 {
+  font-family: "Potta One", system-ui;
+  color: #b91c1c;
+}
+
+/* media query */
+
+@media (max-width: 678px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 355px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

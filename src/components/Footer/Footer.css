@@ -1,0 +1,75 @@
+footer {
+  background-color: #312e81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.footer-container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  color: white;
+  padding: 30px;
+}
+.left-footer {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-container .left-footer h3 {
+  font-size: 36px;
+  font-family: "Potta One", system-ui;
+  color: white;
+  font-weight: 600;
+}
+.left-footer p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* !right-footer style */
+.right-footer {
+  display: flex;
+}
+.right-footer a {
+  margin: 20px;
+  /* background-color: white; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.right-footer a i {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  transition: all 0.65s;
+}
+.right-footer a:hover i {
+  color: rgb(227, 159, 10);
+}
+
+/* !Media query */
+
+@media (max-width: 691px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .left-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .left-footer p,
+  h3 {
+    text-align: center;
+  }
+}
