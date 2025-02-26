@@ -10,6 +10,7 @@ import {
   ref,
   uploadBytes,
 } from "firebase/storage";
+// this is add pizza component where you can upload your pizza's image and its description
 
 function AddPizza() {
   const imgageRef = useRef();
